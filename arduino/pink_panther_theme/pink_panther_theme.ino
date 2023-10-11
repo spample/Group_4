@@ -1,6 +1,3 @@
-// Adapted J. Pearson 2/25/2018
-// This code plays part of Row Row Row your boat, using basic code.
-// Try this with and without loops and variables.
 
 /*
 Notes chart:
@@ -9,7 +6,7 @@ Notes chart:
 1 32.70 34.65 36.71 38.89 41.20 43.65 46.25 49.00 51.91 55.00 58.27 61.74
 2 65.41 69.30 73.42 77.78 82.41 87.31 92.50 98.00 103.8 110.0 116.5 123.5
 3 130.8 138.6 146.8 155.6 164.8 174.6 185.0 196.0 207.7 220.0 233.1 246.9
-4 261.6 277.2 293.7 311.1 329.6 349.2 370.0 392.0 415.3 440.0 466.2 493.9
+4 261.6 277.2 293.7 311.1 329.6 349.42 370.0 392.0 415.3 440.0 466.2 493.9
 5 523.3 554.4 587.3 622.3 659.3 698.5 740.0 784.0 830.6 880.0 932.3 987.8
 6 1047  1109  1175  1245  1319  1397  1480  1568  1661  1760  1865  1976
 7 2093  2217  2349  2489  2637  2794  2960  3136  3322  3520  3729  3951
@@ -49,11 +46,11 @@ for (int i = 0; i < 3; i++){
     tone(output, G);    
       delay(100);
     noTone(output);
-      delay(1000);  
+      delay(600);  
     // E4
     tone(output, D_sharp);    
       delay(100);   
-    // Measure 3, 2 seconds
+    // Measure 2, 2 seconds
     // E4
     tone(output, E);    
       delay(100);
@@ -61,10 +58,10 @@ for (int i = 0; i < 3; i++){
       delay(500); 
     // D4 
     tone(output, F_sharp);  
-      delay(100); 
+      delay(200); 
     // E4
     tone(output, G);    
-      delay(500);
+      delay(200);
     noTone(output);
       delay(500); 
     // F4
@@ -75,7 +72,7 @@ for (int i = 0; i < 3; i++){
     noTone(output);
       delay(700); 
       // E4
-    tone(output, E);    
+    tone(output, F_sharp);    
       delay(100); 
           // E4
     tone(output, G);    
@@ -83,23 +80,23 @@ for (int i = 0; i < 3; i++){
     noTone(output);
       delay(500); 
           // E4
-    tone(output, B);    
+    tone(output, C);    
       delay(100); 
           // E4
     tone(output, A_sharp);    
-      delay(2000); 
+      delay(1000); 
           // E4
     tone(output, A);    
-      delay(80); 
+      delay(90); 
           // E4
     tone(output, G);    
-      delay(100); 
+      delay(90); 
           // E4
     tone(output, E);    
-      delay(80); 
+      delay(90); 
           // E4
     tone(output, D);    
-      delay(80); 
+      delay(100); 
           // E4
     tone(output, E);    
       delay(150); 
